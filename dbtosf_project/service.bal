@@ -86,9 +86,9 @@ salesforce:Client salesforceEp = check new (config = {
 baseUrl: sfConfig.baseUrl, auth: {
 token: sfConfig.token}});
 
-type SalesforceConfig record {|
+type SalesforceConfig record {
     string baseUrl;
     string token;
-|};
+};
 
 configurable SalesforceConfig sfConfig = ?;
